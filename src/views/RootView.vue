@@ -2,27 +2,32 @@
 import Header from '@/components/Header.vue'
 import Divider from '@/components/Divider.vue'
 import Ref from '@/components/Ref.vue'
+import Reactive from '@/components/Reactive.vue'
 import Computed from '@/components/Computed.vue'
 import Watch from '@/components/Watch.vue'
 import WatchEffect from '@/components/WatchEffect.vue'
 </script>
 
 <template>
-  <main class="mx-auto h-full w-full max-w-3xl px-4 py-8 md:px-8 md:py-16">
-    <Header></Header>
+  <main class="mx-auto h-full w-full max-w-5xl px-4 py-8 md:px-8 md:py-16">
+    <Header />
 
-    <Ref></Ref>
+    <Ref />
 
-    <Divider></Divider>
+    <Divider />
 
-    <Computed></Computed>
+    <Reactive />
 
-    <Divider></Divider>
+    <Divider />
 
-    <Watch></Watch>
+    <Computed />
 
-    <Divider></Divider>
+    <Divider />
 
-    <WatchEffect></WatchEffect>
+    <Watch />
+
+    <Divider />
+
+    <WatchEffect />
   </main>
 </template>
