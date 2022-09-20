@@ -47,7 +47,7 @@ const template = ref(`
         >
         <br />
         <span
-          >Prevous is <Code>{{ previous ?? 'uncertain' }}</Code></span
+          >Previous is <Code>{{ previous ?? 'uncertain' }}</Code></span
         >
       </p>
 
