@@ -40,9 +40,7 @@ const template = ref(`
       value divided by 2 is 0. Note that the alert is displayed
       <span class="italic">before</span> the updated value is display in the UI.
       This is because of the default <Code>flush: pre</Code> setting of
-      watchEffect. See <Code>`watchPostEffect`</Code> and
-      <Code>`watchSyncEffect`</Code> to call the function after or during the UI
-      is updated.
+      watchEffect.
     </template>
     <template #demo>
       <p class="text-sm font-medium">
