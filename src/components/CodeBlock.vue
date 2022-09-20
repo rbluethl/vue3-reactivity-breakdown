@@ -1,10 +1,18 @@
 <script setup lang="ts">
+import Prism from 'prismjs'
+import 'prismjs/themes/prism-tomorrow.css'
+import { onMounted } from 'vue'
+
 interface Props {
   script: string
   template: string
 }
 
 defineProps<Props>()
+
+onMounted(() => {
+  Prism.highlightAll()
+})
 </script>
 
 <template>
