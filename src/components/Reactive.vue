@@ -12,7 +12,7 @@ const state = reactive({
 const script = ref(`
 <script setup lang="ts">
   const state = reactive({
-     count:0
+    count: 0
   })
 <\/script>`)
 
@@ -27,9 +27,10 @@ const template = ref(`
   <Example>
     <template #title>reactive()</template>
     <template #subtitle
-      >Use <Code>`reactive`</Code> to return a reactive proxy of the object. In
-      this example, we keep track of the inner numeric value that we can
-      decrement or increment.</template
+      >Use <Code>`reactive`</Code> to return a reactive proxy of an object. In
+      this example, we keep track of the inner numeric count that we can
+      decrement or increment. The reactive object itself cannot be
+      reassigned.</template
     >
     <template #demo>
       <p class="text-sm font-medium">
