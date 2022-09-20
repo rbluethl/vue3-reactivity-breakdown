@@ -19,7 +19,7 @@ const script = ref(`
 
   watchEffect(() => {
     if (count.value !== 0 && count.value % 5 === 0) {
-      alert(\`Count is ${count.value}\`)
+      alert(\`Count is \${count.value}\`)
     }
   })
 <\/script>`)
