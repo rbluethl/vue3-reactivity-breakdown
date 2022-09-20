@@ -27,15 +27,13 @@ import Link from '@/components/Link.vue'
       <span>Built by </span>
 
       <Link href="https://twitter.com/rbluethl" text="@rbluethl"></Link>
-      <!-- <a
-        class="font-medium text-emerald-500 hover:underline"
-        target="_blank"
-        href="https://twitter.com/rbluethl"
-        >@rbluethl</a
-      > -->
 
       <span>, code on </span>
-      <Link href="https://twitter.com/rbluethl" text="GitHub"></Link>.
+      <Link
+        href="https://github.com/rbluethl/vue3-reactivity-breakdown"
+        text="GitHub"
+      ></Link
+      >.
     </p>
   </header>
 </template>
