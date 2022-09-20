@@ -8,7 +8,7 @@ import Example from '@/components/Example.vue'
 const count = ref(0)
 
 watchEffect(() => {
-  if (count.value !== 0 && count.value % 2 === 0) {
+  if (count.value !== 0 && count.value % 5 === 0) {
     alert(`Count is ${count.value}`)
   }
 })
@@ -18,7 +18,7 @@ const script = ref(`
   const count = ref(0)
 
   watchEffect(() => {
-    if (count.value !== 0 && count.value % 2 === 0) {
+    if (count.value !== 0 && count.value % 5 === 0) {
       alert(\`Count is ${count.value}\`)
     }
   })
@@ -37,7 +37,7 @@ const template = ref(`
     <template #subtitle
       >Use <Code>`watchEffect`</Code> to run a function whenever the value of a
       dependency changes. In this example, we display an alert whenever the
-      value divided by 2 is 0. Note that the alert is displayed
+      value divided by 5 is 0. Note that the alert is displayed
       <span class="italic">before</span> the updated value is display in the UI.
       This is because of the default <Code>flush: pre</Code> setting of
       watchEffect.
