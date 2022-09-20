@@ -5,24 +5,29 @@ import Ref from '@/components/Ref.vue'
 import Computed from '@/components/Computed.vue'
 import Watch from '@/components/Watch.vue'
 import WatchEffect from '@/components/WatchEffect.vue'
+import Reactive from '../components/Reactive.vue'
 </script>
 
 <template>
   <main class="mx-auto h-full w-full max-w-5xl px-4 py-8 md:px-8 md:py-16">
-    <Header></Header>
+    <Header />
 
-    <Ref></Ref>
+    <Ref />
 
-    <Divider></Divider>
+    <Divider />
 
-    <Computed></Computed>
+    <Reactive />
 
-    <Divider></Divider>
+    <Divider />
 
-    <Watch></Watch>
+    <Computed />
 
-    <Divider></Divider>
+    <Divider />
 
-    <WatchEffect></WatchEffect>
+    <Watch />
+
+    <Divider />
+
+    <WatchEffect />
   </main>
 </template>
